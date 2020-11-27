@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+}
+
+
+body{
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+table{
+    font-size: 1em;
+    width: 50vw;
+    border-bottom: 1px solid #4C73DF;
+}
+
+table td, th{
+    padding: 20px;
+    vertical-align: top;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+table thead tr th{
+    background-color: #B5ABAB;
+    border-bottom: 3px solid #4C73DF;
+   
+}
+
+table tr:hover{
+    background-color: #A9D0F5;
+}
+
+input, textarea, select{
+    font-size: 1.5em;
+    padding: 5px;
+    border: 1px solid #C1304F;
+    
+}
+
+input:hover{
+    background-color:#F8E0E6;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.lista{
+    list-style: none;
+    padding-left: 5px;
+}
+
+.item{
+    border: 1px solid #F00;
+}
+    
+.listaVazia{
+    display: none;
+    list-style: none;
+}
+
+.itemVazio{
+    display: none;
+}
+
+.tabelaVazia{
+    display: none;
+}
+
+.tabelaCheia{
+    display:block;
+}
+
+.detalhamento{
+    display: none;
+}
+
+

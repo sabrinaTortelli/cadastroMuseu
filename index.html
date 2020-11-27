@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validacao.js"></script>
+    <title>Trabalho 2</title>
+</head>
+<body>
+    <h1>Cadastro de obras do Museu</h1>
+
+    <div id="validationMessages"> 
+        <ul id="ul" class="listaVazia">
+            <li id="li1" class="itemVazio"></li>
+            <li id="li2" class="itemVazio"></li>
+            <li id="li3" class="itemVazio"></li>
+            <li id="li4" class="itemVazio"></li>
+            <li id="li5" class="itemVazio"></li>
+            <li id="li6" class="itemVazio"></li>
+            <li id="li7" class="itemVazio"></li>
+            <li id="li8" class="itemVazio"></li>
+            <li id="li9" class="itemVazio"></li>
+        </ul>
+            
+    </div>
+
+        <form method="get" id="formulario">
+            <label for="nome">Nome da Obra</label><br>
+            <input type="text" name="nome" id="nome" maxlength="100"><br><br>
+
+            <label for="autor">Autor</label><br>
+            <input type="text" name="autor" id="autor" maxlength="100"><br><br>
+
+            <label for="ano">Ano da Obra</label><br>
+            <input type="text" name="ano" id="ano"  maxlength="4"><br><br>
+
+            <label>Período da Obra</label><br>
+            <select name="periodo" id="periodo">
+                <option value="vazio">Selecione uma opção</option>
+                <option value="dc">d.C.</option>
+                <option value="ac">a.C.</option>
+            </select><br><br>
+
+            <label>Tipo</label><br>
+            <select name="tipo" id="tipo">
+                <option value="vazio">Selecione uma opção</option>
+                <option value="quadro">Quadro</option>
+                <option value="escultura">Escultura</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+            <label for="detalhamento">Detalhamento</label><br>
+            <textarea id="detalhamento" maxlength="2000" cols="40" rows="5"></textarea><br><br>
+
+            <input type="button" name="enviar" onclick="validaForm()" value="Enviar">    
+        </form><br><br>
+    <div id="inclusaoTabela" class="tabelaVazia">
+        <table>
+            <thead> 
+                <tr>
+                    <th>Nome da Obra</th>
+                    <th>Autor</th>
+                    <th>Ano da Obra</th>
+                    <th>Período</th>
+                    <th>Tipo</th>
+                    <th>Excluir</th>
+                    <th id="det">Detalhamento</th>
+                </tr>
+            </thead>
+            <tbody id="tBodyId"> 
+                
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
